@@ -1,0 +1,2 @@
+results = {layerComp{1},xLayer,yLayer,subsComp,xSubs,ySubs,QWLength,wavelength,valenceNoIter,conductionNoIter,valenceEffL,conductionEffL,valenceEffE,conductionEffE,vBandEff,cBandEff,SubsEv,Ev,SubsEc,Ec,DeltaEv,DeltaEc,epsilon_perp,epsilon_par};
+writecell(results, "results.xlsx",'WriteMode','append');

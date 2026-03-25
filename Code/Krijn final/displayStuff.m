@@ -1,0 +1,24 @@
+%syms x;
+%cBand = piecewise(x < (0-QWLength/2), SubsEc, ((0-QWLength/2) < x) & (x < (0+QWLength/2)), Ec, x > (0+QWLength/2), SubsEc);
+%vBand = piecewise(x < (0-QWLength/2), SubsEv, (x > (0-QWLength/2)) & (x < (0+QWLength/2)), Ev, x > (0+QWLength/2), SubsEv);
+x = -QWLength:QWLength/10000:QWLength;
+cBand(x < (0-QWLength/2)) = SubsEc;
+cBand((0-QWLength/2) <= x & x <= (0+QWLength/2)) = Ec;
+cBand(x > 0+QWLength/2) = SubsEc;
+vBand(x < (0-QWLength/2)) = SubsEv;
+vBand((0-QWLength/2) <= x & x <= (0+QWLength/2)) = Ev;
+vBand(x > 0+QWLength/2) = SubsEv;
+cBandEff = Ec+conductionEffE;
+vBandEff = Ev-valenceEffE;
+plot(app.UIAxes,x,cBand,"LineWidth",2,'Color','#FF3300');
+hold(app.UIAxes);
+plot(app.UIAxes,x,vBand,"LineWidth",2,'Color','#9000FF');
+hold(app.UIAxes);
+yline(app.UIAxes, cBandEff,"LineWidth",2,'Color','#0AB000');
+hold(app.UIAxes);
+yline(app.UIAxes, vBandEff,"LineWidth",2,'Color','#00FFEE');
+xlim(app.UIAxes, [-QWLength QWLength]);
+hold(app.UIAxes);
+
+appText = [sprintf("Layer Ev = %f",Ev);sprintf("Layer Ec = %f",Ec);sprintf("Substrate Ev = %f",SubsEv);sprintf("Substrate Ec = %f",SubsEc);sprintf("Delta Ev = %f",DeltaEv);sprintf("Delta Ec = %f",DeltaEc);sprintf("Val Eff QWL (nm) = %f",valenceEffL);sprintf("Cond Eff QWL (nm) = %f",conductionEffL);sprintf("Valence No. iterations = %d",valenceNoIter);sprintf("Conduction No. iterations = %d",conductionNoIter);sprintf("Val Eff E (eV) = %f",valenceEffE);sprintf("Cond Eff E (eV) = %f",conductionEffE);sprintf("Wavelength (nm) = %f",wavelength);sprintf("epsilon par = %f",epsilon_par*100);sprintf("epsilon perp = %f",epsilon_perp*100)];
+app.TextArea.Value = appText;

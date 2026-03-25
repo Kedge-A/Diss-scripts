@@ -1,0 +1,14 @@
+AlAs(x)Sb(1-x),AlAs,AlSb,0.84,0.15
+Al(x)Ga(1-x)P,AlP,GaP,0,0
+Al(x)Ga(1-x)As,AlAs,GaAs,0.37,0
+Al(x)Ga(1-x)Sb,AlSb,GaSb,0.47,0.3
+Al(x)In(1-x)P,AlP,InP,0,0
+Al(x)In(1-x)As,AlAs,InAs,0.7,0.15
+GaP(x)As(1-x),GaP,GaAs,0.21,0
+GaAs(x)Sb(1-x),GaAs,GaSb,1.2,0.6
+Ga(x)In(1-x)P,GaP,InP,0.79,0
+Ga(x)In(1-x)As,GaAs,InAs,0.38,0.15
+Ga(x)In(1-x)Sb,GaSb,InSb,0.42,0
+InP(x)As(1-x),InP,InAs,0.28,0.1
+InP(x)Sb(1-x),InP,InSb,1.3,0.75
+InAs(x)Sb(1-x),InAs,InSb,0.58,1.2

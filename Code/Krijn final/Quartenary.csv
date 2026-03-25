@@ -1,0 +1,6 @@
+﻿Al(x)Ga(y)In(1-x-y)P,xy1xy,Al(x)Ga(1-x)P,Al(x)In(1-x)P,Ga(x)In(1-x)P,
+Al(x)Ga(y)In(1-x-y)As,xy1xy,Al(x)Ga(1-x)As,Al(x)In(1-x)As,Ga(x)In(1-x)As,
+Al(x)Ga(1-x)As(y)Sb(1-y),x1xy1y,Al(x)Ga(1-x)As,Al(x)Ga(1-x)Sb,AlAs(x)Sb(1-x),GaAs(x)Sb(1-x)
+Ga(x)In(1-x)P(y)As(1-y),x1xy1y,Ga(x)In(1-x)P,Ga(x)In(1-x)As,GaP(x)As(1-x),InP(x)As(1-x)
+Ga(x)In(1-x)As(y)Sb(1-y),x1xy1y,Ga(x)In(1-x)As,Ga(x)In(1-x)Sb,GaAs(x)Sb(1-x),InAs(x)Sb(1-x)
+InP(x)As(y)Sb(1-x-y),xy1xy,InP(x)As(1-x),InP(x)Sb(1-x),InAs(x)Sb(1-x),

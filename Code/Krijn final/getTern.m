@@ -1,0 +1,19 @@
+function outArray = getTern(ternCompVal,compVal,x)
+    Binary = evalin("base", 'Binary');
+    Ternary = evalin("base", 'Ternary');
+    outArray = [];
+        outArray(1,1) = double(cell2mat(Binary(ternCompVal,2)));
+        outArray(1,2) = double(cell2mat(Binary(ternCompVal,3)));
+        outArray(1,3) = double(cell2mat(Binary(ternCompVal,4)));
+        outArray(1,4) = double(cell2mat(Binary(ternCompVal,6)));
+        outArray(1,5) = double(cell2mat(Binary(ternCompVal,7)));
+        outArray(1,6) = double(cell2mat(Binary(ternCompVal,8)));
+        outArray(1,7) = double(cell2mat(Binary(ternCompVal,11)));
+        outArray(1,8) = double(cell2mat(Binary(ternCompVal,12)));
+        outArray(1,9) = double(cell2mat(Binary(ternCompVal,13)));
+        outArray(1,10) = double(cell2mat(Ternary(compVal-9,(x+2))));
+        outArray(1,11) = double(cell2mat(Binary(ternCompVal,15)));
+        outArray(1,12) = double(cell2mat(Binary(ternCompVal,16)));
+        outArray(1,12) = double(cell2mat(Binary(ternCompVal,16)));
+        outArray(1,13) = double(cell2mat(Binary(ternCompVal,17)));
+end
